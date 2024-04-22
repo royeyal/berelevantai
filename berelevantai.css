@@ -1,11 +1,11 @@
 ::selection {
-	/*background-color: var(--swatch--brand-01);
-	color: var(--color--text-alt);*/
+	background-color: var(--link-color--link-primary);
+	color: var(--link-color--link-alternate);
 }
 
 /*** Custom Cursor ***/
 .mf-cursor::before {
-	/*background: var(--swatch--brand-01);*/
+	background: var(--link-color--link-primary);
 	transform: scale(0.7);
 }
 
