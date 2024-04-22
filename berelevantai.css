@@ -14,7 +14,7 @@
 }
 
 /* Button */
-.cybr-btn {
+.button {
 	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
 	--shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
 	--primary-hue: 0;
@@ -53,15 +53,15 @@
 	transition: background 0.2s;
   }
   
-  .cybr-btn:hover {
+  .button:hover {
 	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
   }
-  .cybr-btn:active {
+  .button:active {
 	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
   }
   
-  .cybr-btn:after,
-  .cybr-btn:before {
+  .button::after,
+  .button::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -72,16 +72,16 @@
 	z-index: -1;
   }
   
-  .cybr-btn:before {
+  .button::before {
 	background: var(--shadow-primary);
 	transform: translate(var(--border), 0);
   }
   
-  .cybr-btn:after {
+  .button:after {
 	background: var(--primary);
   }
   
-  .cybr-btn__tag {
+  .button__tag {
 	position: absolute;
 	padding: 1px 4px;
 	letter-spacing: 1px;
@@ -106,7 +106,7 @@
 	display: none;
   }
   
-  .cybr-btn:hover .cybr-btn__glitch {
+  .button:hover .cybr-btn__glitch {
 	display: block;
   }
   
