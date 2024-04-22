@@ -1,0 +1,15 @@
+::selection {
+	background-color: var(--swatch--brand-01);
+	color: var(--color--text-alt);
+}
+
+
+/*** Custom Cursor ***/
+.mf-cursor::before {
+	/*background: var(--swatch--brand-01);*/
+	transform: scale(0.7);
+}
+
+.mf-cursor-text {
+	font-weight: bold;
+}
