@@ -20,13 +20,13 @@
 	--primary-hue: 0;
 	--primary-lightness: 50;
 	--color: hsl(0, 0%, 100%);
-	--font-size: 26px;
+	--font-size: var(--button--font-size, 1.625rem);
 	--shadow-primary-hue: 180;
 	--label-size: 9px;
 	--shadow-secondary-hue: 60;
 	--shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
 	--clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
-	--border: 4px;
+	--border: var(--button--border-width, 4px);
 	--shimmy-distance: 5;
 	--clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
 	--clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
@@ -77,7 +77,7 @@
 	transform: translate(var(--border), 0);
   }
   
-  .button:after {
+  .button::after {
 	background: var(--primary);
   }
   
@@ -110,7 +110,7 @@
 	display: block;
   }
   
-  .cybr-btn__glitch:before {
+  .cybr-btn__glitch::before {
 	content: '';
 	position: absolute;
 	top: calc(var(--border) * 1);
