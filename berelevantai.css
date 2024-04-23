@@ -85,7 +85,7 @@
 	background: var(--primary);
   }
   
-  .button__tag {
+  .cybr-btn__tag {
 	position: absolute;
 	padding: 1px 4px;
 	letter-spacing: 1px;
