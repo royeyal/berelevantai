@@ -53,7 +53,7 @@
 	transition: background 0.2s;
   }
 
-  .button .is-secondary {
+  .button.is-secondary {
 	--primary-hue: 260;
   }
   
