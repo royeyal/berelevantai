@@ -38,12 +38,12 @@
 
 	font-family: 'Blender Pro','Assistant', sans-serif;
 	color: var(--color);
-	cursor: pointer;
+	/*cursor: pointer;*/
 	background: transparent;
 	text-transform: uppercase;
 	font-size: var(--font-size);
 	outline: transparent;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 	position: relative;
 	font-weight: bold;
 	border: 0;
