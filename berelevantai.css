@@ -52,6 +52,10 @@
 	line-height: 75px;*/
 	transition: background 0.2s;
   }
+
+  .button .is-secondary {
+	--primary-hue: 260;
+  }
   
   .button:hover {
 	--primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
