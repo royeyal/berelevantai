@@ -54,7 +54,7 @@
   }
 
   .button.is-secondary {
-	--primary-hue: 260;
+	--primary-hue: 220;
   }
   
   .button:hover {
