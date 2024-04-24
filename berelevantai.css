@@ -20,7 +20,7 @@
 	--primary-hue: 0;
 	--primary-lightness: 50;
 	--color: hsl(0, 0%, 100%);
-	--font-size: var(--button--font-size, 1.25rem);
+	/* --font-size: var(--button--font-size, 1.25rem); */
 	--shadow-primary-hue: 180;
 	--label-size: 0.625rem;
 	--shadow-secondary-hue: 60;
@@ -36,7 +36,7 @@
 	--clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
 	--clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
 
-	font-family: 'Blender Pro','Assistant', sans-serif;
+	/* font-family: 'Blender Pro','Assistant', sans-serif; */
 	color: var(--color);
 	/*cursor: pointer;*/
 	background: transparent;
