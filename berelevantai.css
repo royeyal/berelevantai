@@ -20,9 +20,9 @@
 	--primary-hue: 0;
 	--primary-lightness: 50;
 	--color: hsl(0, 0%, 100%);
-	--font-size: var(--button--font-size, 1.625rem);
+	--font-size: var(--button--font-size, 1.25rem);
 	--shadow-primary-hue: 180;
-	--label-size: 9px;
+	--label-size: 0.625rem;
 	--shadow-secondary-hue: 60;
 	--shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
 	--clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
