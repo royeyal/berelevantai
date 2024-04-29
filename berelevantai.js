@@ -25,7 +25,7 @@ function setupSplits() {
 		});
 	});
 }
-//setupSplits();
+setupSplits();
 
 /***************************/
 /* Cuberto Mouse Follower */
