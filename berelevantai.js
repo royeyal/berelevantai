@@ -1,39 +1,78 @@
-/****
- * Load first: GSAP, ScrollTrigger, SplitText
- *****/
-gsap.registerPlugin(ScrollTrigger, SplitText);
+$(".tab-button").click(function(e) { 
+  e.preventDefault();
+  $(".tab-button").removeClass("tab-button-active");
+  $(".w-tab-link:contains(" + e.target.innerText + ")").click();
+  $(e.target).addClass("tab-button-active");
+})
 
-function setupSplits() {
-	const targets = gsap.utils.toArray([".heading-style-h1"]);
-	targets.forEach((target) => {
-		let splitHeading = new SplitText(target, {
-			type: "words, chars",
-		});
-		let chars = splitHeading.chars; //an array of all the divs that wrap each character
-		gsap.from(chars, {
-			yPercent: 130,
-			stagger: 0.05,
-			ease: "back.out",
-			duration: 0.7,
-			scrollTrigger: {
-				trigger: target,
-				//markers: true,
-				start: "top 75%",
-				end: "bottom center",
-				//scrub: true
-			},
-		});
-	});
-}
-setupSplits();
-
-/***************************/
-/* Cuberto Mouse Follower */
-/*************************/
-// Initialize a new MouseFollower instance with custom settings
-// var cursor = new MouseFollower();
-const cursor = new MouseFollower({
-	speed: 0.4, // Cursor movement speed
-	skewing: 1, // Skewing effect for the cursor
-	skewingText: 3, // Skewing effect specifically for the text in the cursor
+document.getElementById('button-00').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'Devs'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
 });
+
+document.getElementById('button-01').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'DevOps'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
+});
+
+document.getElementById('button-02').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'Ops'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
+});
+
+document.getElementById('button-03').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'Management'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
+});
+
+document.getElementById('button-04').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'Product'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
+});
+
+document.getElementById('button-05').addEventListener('click', function() {
+  var select = document.getElementById('select-course');
+  select.value = 'Project'; // Change the selected option to value 2
+  select.dispatchEvent(new Event('change')); // Trigger the change event
+});
+
+document.getElementById('button-00-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'Devs'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
+  
+  document.getElementById('button-01-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'DevOps'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
+  
+  document.getElementById('button-02-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'Ops'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
+  
+  document.getElementById('button-03-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'Management'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
+  
+  document.getElementById('button-04-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'Product'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
+  
+  document.getElementById('button-05-bottom').addEventListener('click', function() {
+	var select = document.getElementById('select-course');
+	select.value = 'Project'; // Change the selected option to value 2
+	select.dispatchEvent(new Event('change')); // Trigger the change event
+  });
