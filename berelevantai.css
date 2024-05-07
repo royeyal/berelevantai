@@ -7,8 +7,8 @@
 ::selection {
 	background-color: var(--link-color--link-primary);
 	color: var(--link-color--link-alternate);
-	-webkit-text-fill-color: inherit;
-	text-fill-color: inherit;
+	-webkit-text-fill-color: var(--base-color-brand--white);
+	text-fill-color: var(--base-color-brand--white);
 }
 
 /* Set color style to inherit */
