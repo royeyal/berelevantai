@@ -1,3 +1,40 @@
+$(document).ready(function () {
+    var accordionToggleButton = $('.faq1_question'); //accordion-trigger
+    accordionToggleButton.on('keydown', function (e) {
+        // Activate on spacebar and enter
+        if (e.type === "keydown" && (e.which !== 13 && e.which !== 32)) {
+            return;
+        }
+        e.preventDefault();
+
+        // Simulate a mouseclick to trigger Webflow's IX2/Interactions
+        var evt = document.createEvent("MouseEvents");
+        evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        $(this).get(0).dispatchEvent(evt);
+    });
+
+    accordionToggleButton.on('click touchend', function (e) {
+        $(this).toggleAttrVal('aria-expanded', "false", "true"); //toggle trigger attribute
+        $(this).parent().find('.faq1_answer').toggleAttrVal('aria-hidden', "true", "false"); //toggle content attribute .accordion-content
+    });
+
+    // jquery toggle just the attribute value
+    $.fn.toggleAttrVal = function (attr, val1, val2) {
+        var test = $(this).attr(attr);
+        if (test === val1) {
+            $(this).attr(attr, val2);
+            return this;
+        }
+        if (test === val2) {
+            $(this).attr(attr, val1);
+            return this;
+        }
+        // default to val1 if neither
+        $(this).attr(attr, val1);
+        return this;
+    };
+});
+
 // Switch tabs on click
 $(".tab-button").click(function (e) {
 	e.preventDefault();
