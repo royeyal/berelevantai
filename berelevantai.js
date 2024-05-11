@@ -60,7 +60,6 @@ document
 		select.value = "Devs"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[0];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -70,7 +69,6 @@ document
 		select.value = "DevOps"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[1];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -80,7 +78,6 @@ document
 		select.value = "Ops"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[2];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -90,7 +87,6 @@ document
 		select.value = "Management"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[3];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -100,7 +96,6 @@ document
 		select.value = "Product"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[4];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -110,7 +105,6 @@ document
 		select.value = "Project"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[5];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -120,7 +114,6 @@ document
 		select.value = "Devs"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[0];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -130,7 +123,6 @@ document
 		select.value = "DevOps"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[1];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -140,7 +132,6 @@ document
 		select.value = "Ops"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[2];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -150,7 +141,6 @@ document
 		select.value = "Management"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[3];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -160,7 +150,6 @@ document
 		select.value = "Product"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[4];
-		document.getElementById("Modal-3-Name").focus();
 	});
 
 document
@@ -170,5 +159,4 @@ document
 		select.value = "Project"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[5];
-		document.getElementById("Modal-3-Name").focus();
 	});
