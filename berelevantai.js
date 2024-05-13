@@ -45,9 +45,7 @@ $(".tab-button").click(function (e) {
 
 let new_titleRegister = document.getElementById("titleRegister");
 const aiCourses = [
-	"AI for IT Devs",
-	"AI for IT DevOps",
-	"AI for IT Ops",
+	"AI for Code Writers",
 	"AI for Management",
 	"AI for Product Management",
 	"AI for Project Management",
@@ -57,27 +55,9 @@ document
 	.getElementById("button-00")
 	.addEventListener("click", function () {
 		var select = document.getElementById("select-course");
-		select.value = "Devs"; // Change the selected option to value 2
+		select.value = "Code"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
 		new_titleRegister.innerHTML = aiCourses[0];
-	});
-
-document
-	.getElementById("button-01")
-	.addEventListener("click", function () {
-		var select = document.getElementById("select-course");
-		select.value = "DevOps"; // Change the selected option to value 2
-		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[1];
-	});
-
-document
-	.getElementById("button-02")
-	.addEventListener("click", function () {
-		var select = document.getElementById("select-course");
-		select.value = "Ops"; // Change the selected option to value 2
-		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[2];
 	});
 
 document
@@ -86,7 +66,7 @@ document
 		var select = document.getElementById("select-course");
 		select.value = "Management"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[3];
+		new_titleRegister.innerHTML = aiCourses[1];
 	});
 
 document
@@ -95,7 +75,7 @@ document
 		var select = document.getElementById("select-course");
 		select.value = "Product"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[4];
+		new_titleRegister.innerHTML = aiCourses[2];
 	});
 
 document
@@ -104,7 +84,7 @@ document
 		var select = document.getElementById("select-course");
 		select.value = "Project"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[5];
+		new_titleRegister.innerHTML = aiCourses[3];
 	});
 
 document
@@ -117,30 +97,12 @@ document
 	});
 
 document
-	.getElementById("button-01-bottom")
-	.addEventListener("click", function () {
-		var select = document.getElementById("select-course");
-		select.value = "DevOps"; // Change the selected option to value 2
-		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[1];
-	});
-
-document
-	.getElementById("button-02-bottom")
-	.addEventListener("click", function () {
-		var select = document.getElementById("select-course");
-		select.value = "Ops"; // Change the selected option to value 2
-		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[2];
-	});
-
-document
 	.getElementById("button-03-bottom")
 	.addEventListener("click", function () {
 		var select = document.getElementById("select-course");
 		select.value = "Management"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[3];
+		new_titleRegister.innerHTML = aiCourses[1];
 	});
 
 document
@@ -149,7 +111,7 @@ document
 		var select = document.getElementById("select-course");
 		select.value = "Product"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[4];
+		new_titleRegister.innerHTML = aiCourses[2];
 	});
 
 document
@@ -158,5 +120,5 @@ document
 		var select = document.getElementById("select-course");
 		select.value = "Project"; // Change the selected option to value 2
 		select.dispatchEvent(new Event("change")); // Trigger the change event
-		new_titleRegister.innerHTML = aiCourses[5];
+		new_titleRegister.innerHTML = aiCourses[3];
 	});
