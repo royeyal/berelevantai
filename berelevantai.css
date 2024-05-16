@@ -249,40 +249,62 @@ html {
 }
 
 .button {
-	position: relative;
-	color: var(--textColor2);
-	border-radius: 26px;
-	background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
-	background-size: 400%;
+	background-size: 100%;
 	background-position: 0% 0%;
-  }
-  .button::before {
+}
+
+.button::before {
 	content: "";
 	position: absolute;
 	left: -2px;
 	top: -2px;
 	right: -2px;
 	bottom: -2px;
-	border-radius: 26px;
-	background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
-	background-size: 500%;
+	border-radius: 50em;
+	background-image: linear-gradient(90deg, var(--brand--gradient-start), var(--brand--gradient-end), var(--brand--blue), var(--brand--turquoise), var(--brand--purple));
+	background-size: 250%;
 	background-position: 0% 0%;
-	filter: blur(10px);
+	filter: blur(5px);
 	opacity: 0;
 	z-index: -1;
 	transition: opacity 0.2s;
-  }
-  .button:hover {
-	animation: gradientRotate 2s infinite;
-  }
-  .button:hover::before {
+}
+
+.button:hover {
+	animation: gradient-animation 10s infinite;
+}
+
+.button:hover::before {
 	opacity: 1;
-	animation: gradientRotate 2s infinite;
-  }
-  .button:active {
+	animation: gradient-animation 10s infinite;
+}
+
+.button:active {
 	color: #c3c4d5;
-  }
-  .button:focus::before {
+}
+
+.button:focus::before {
 	opacity: 1;
-  }
-  
+}
+
+@keyframes gradientRotate {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
