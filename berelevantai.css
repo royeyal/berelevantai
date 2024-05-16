@@ -247,3 +247,42 @@ html {
 		font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
 	}
 }
+
+.button {
+	position: relative;
+	color: var(--textColor2);
+	border-radius: 26px;
+	background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+	background-size: 400%;
+	background-position: 0% 0%;
+  }
+  .button::before {
+	content: "";
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	right: -2px;
+	bottom: -2px;
+	border-radius: 26px;
+	background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+	background-size: 500%;
+	background-position: 0% 0%;
+	filter: blur(10px);
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 0.2s;
+  }
+  .button:hover {
+	animation: gradientRotate 2s infinite;
+  }
+  .button:hover::before {
+	opacity: 1;
+	animation: gradientRotate 2s infinite;
+  }
+  .button:active {
+	color: #c3c4d5;
+  }
+  .button:focus::before {
+	opacity: 1;
+  }
+  
